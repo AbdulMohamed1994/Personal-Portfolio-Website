@@ -340,7 +340,7 @@ p {
 }
 .skills li{
 	margin: 20px 0;
-	width: fit-content;
+	width: auto;
 }
 
 .bar{
