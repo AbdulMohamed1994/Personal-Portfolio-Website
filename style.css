@@ -5,12 +5,6 @@
 	box-sizing: border-box;
 }
 
-@media only screen and (min-width: 300px) {
-	* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -279,6 +273,7 @@ p {
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
+	font-size: 20px;
 }
 #services .service-top {
 	margin: 30px auto;
@@ -346,7 +341,7 @@ p {
 .bar{
 	background: #353b48;
 	display: block;
-	height: 5px;
+	height: 20px;
 	border: 1px solid rgba(0,0,0,0,3);
 	border-radius: 3px;
 	overflow: hidden;
@@ -354,7 +349,7 @@ p {
 	font-size: 5.8rem;
 }
 .bar span{
-	height: 5px;
+	height: 20px;
 	float: left;
 	background: crimson;
 }
@@ -512,7 +507,6 @@ p {
 }
 #about .col-right .cta {
 	color: black;
-	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
@@ -536,6 +530,10 @@ p {
 
 /*Testimonials*/
 
+#Testimonials{
+	padding-top: 20rem;
+}
+
 .Testimonials{
 	display: unset;
 	flex-direction: row;
@@ -550,7 +548,7 @@ p {
 	width: 75%;
 	height: 75%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	margin-left: 15%;
 }
 #Testimonials .Testimonial-item {
@@ -846,3 +844,22 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+@media only screen and (max-width:1024px) {
+	.icon img{
+		height: 80px;
+	width: 80px;
+	object-fit: cover;
+	object-position: top;
+	}
+
+	#Testimonials .Testimonial-item{
+		display: inline;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	#Testimonials .Testimonial-items{
+		flex-direction: column;
+	}
+	}
